@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistema de Reservación</title>
+	<style type="text/css">
+		body{
+			background-image: url('sol.jpg');
+		}
+		
+		div{
+			width:80px; 
+			margin:0px auto;
+		}
+
+		#informacion{
+			margin:0px 0px;
+			width:700px; 
+		}
+		
+		#avion{
+			
+			position:absolute;
+			top:40px;
+			left:150px;
+			width:600px;
+		}
+		
+		.asiento{
+			border-style:solid;
+			border-width:1px;
+			border-color:#000;
+			width:20px;
+			border-radius:50%;
+			padding:1px;
+			text-align:center;
+			background-color:gray;
+			font-weight:bolder;
+			color:white;
+			transition-property:background-color;
+			transition-duration:2s;
+		}
+
+		#a1{
+			position:absolute;
+			top:100px;
+			left:48.5%;
+				
+		}
+		#a2{
+			position:absolute;
+			top:100px;
+			left:53%;
+		}
+		#a3{
+			position:absolute;
+			top:130px;
+			left:48.5%;
+		}
+		#a4{
+			position:absolute;
+			top:130px;
+			left:53%;
+		}
+		#a5{
+			position:absolute;
+			top:160px;
+			left:48.5%;
+		}
+		#a6{
+			position:absolute;
+			top:160px;
+			left:53%;
+		}
+		#a7{
+			position:absolute;
+			top:190px;
+			left:50.5%;
+		}
+
+
+
+
+
+		
+		#a8{
+			position:absolute;
+			top:300px;
+			left:48.5%;
+				
+		}
+		#a9{
+			position:absolute;
+			top:300px;
+			left:53%;
+		}
+		#a10{
+			position:absolute;
+			top:330px;
+			left:48.5%;
+		}
+		#a11{
+			position:absolute;
+			top:330px;
+			left:53%;
+		}
+		#a12{
+			position:absolute;
+			top:360px;
+			left:48.5%;
+		}
+		#a13{
+			position:absolute;
+			top:360px;
+			left:53%;
+		}
+		#a14{
+			position:absolute;
+			top:390px;
+			left:50.5%;
+		}
+
+		#titulo{
+			font-family:Optima;
+			font-size:35pt;
+			font-weight:bolder;
+			margin:60px;
+			display:block;
+			text-shadow:0px 0px 3px #19D5EE;
+			color:#FFFFFF;
+		}
+		
+		input:hover{
+			box-shadow: 0px 0px 10px blue;	
+		}
+			
+		fieldset{
+
+			width:350px;
+			margin:30px auto;
+			//border-color:#19D5EE;
+			border-color:red;
+			border-style:solid;
+			//box-shadow: -10px 0px 30px #000,
+				    inset 0px 0px 10px #044FFE;
+			padding:10px;
+			//border-radius:5px;			 
+		}
+
+		legend{
+			
+			font-variant:small-caps;
+			//padding:2px;
+			//font-weight:bolder;
+			//background-color:#FFFFFF;
+		}
+		
+		#reset{
+			color: black;
+			width:200px;
+			margin:0px auto;
+			display:block;
+		}
+		
+		.disponible{
+			background-color:green;
+		}
+		
+		.nodisponible{
+			background-color:red;
+		}
+
+		#mensaje{
+			width:380px;
+			height:200px;
+			border-style:solid;
+			border-width:1px;
+			//border-color:#19D5EE;
+			border-color:red;
+			text-align:center;
+			font-family:arial;
+			font-size:16pt;
+			padding-top:15px;
+			//box-shadow: -10px 0px 20px #000,
+				    inset 0px 0px 10px #044FFE;
+			border-radius:5px;
+		}
+		
+	</style>
+
+
+</head>
+<body>
+	<div>
+		<div id="informacion">
+			<span id="titulo">Sistema de Reservaci&oacute;n.</span>	
+			<fieldset id="conj">
+				<legend>Clases</legend>
+				<input type="radio" name="clase" value="pClase"><label>Primera Clase</label><br><br>
+				<input type="radio" name="clase" value="sClase"><label>Segunda Clase</label><br><br>
+			</fieldset>
+			<fieldset>
+				<legend>Reset</legend>
+				<input type="button" name="reset" id="reset" value="Reset">
+			</fieldset>
+			<div id="mensaje"></div>	
+		</div>	 	
+		<div id="avion">	
+			<img src="airplane8.png" width="640px" height="580px">
+			<div id="a1" class="asiento">1</div> 
+			<div id="a2" class="asiento">2</div>
+			<div id="a3" class="asiento">3</div>
+			<div id="a4" class="asiento">4</div>
+
+			<div id="a5" class="asiento">5</div>
+			<div id="a6" class="asiento">6</div>
+
+			<div id="a7" class="asiento">7</div>
+
+
+			<div id="a8" class="asiento">8</div>
+			<div id="a9" class="asiento">9</div>
+			<div id="a10" class="asiento">10</div>
+			<div id="a11" class="asiento">11</div>
+			<div id="a12" class="asiento">12</div>
+			<div id="a13" class="asiento">13</div>
+			<div id="a14" class="asiento">14</div>
+		</div>	
+	</div>
+</body>
+</html>
